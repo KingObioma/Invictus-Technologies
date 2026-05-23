@@ -1,0 +1,5 @@
+Copy Logo/invictus-logo.jpeg to this directory as "logo.png" or "logo.jpeg"
+to use the actual logo in the website.
+
+The SVG delta mark is already embedded in code and used in the Navbar/Footer.
+The logo image can be used for Open Graph metadata or additional pages.
