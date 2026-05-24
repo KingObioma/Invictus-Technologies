@@ -119,7 +119,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 28 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display font-extrabold text-white text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] leading-[1.04] tracking-tight max-w-5xl"
+            className="font-display font-extrabold text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.04] tracking-tight max-w-5xl"
           >
             We Build Systems That{" "}
             <span className="text-gradient-orange">Power Businesses</span>{" "}

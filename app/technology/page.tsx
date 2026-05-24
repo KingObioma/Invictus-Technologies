@@ -125,7 +125,7 @@ export default function TechnologyPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <Badge variant="orange" dot>Our Stack</Badge>
-            <h1 className="font-display font-black text-white text-5xl sm:text-6xl md:text-7xl leading-[1.05] tracking-tight mt-6 mb-6">
+            <h1 className="font-display font-black text-white text-4xl sm:text-5xl md:text-6xl leading-[1.05] tracking-tight mt-6 mb-6">
               The Right Tool<br />
               <span className="text-gradient-orange">for Every Problem</span>
             </h1>

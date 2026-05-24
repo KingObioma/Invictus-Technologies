@@ -27,7 +27,7 @@ export function FinalCTA() {
             Ready When You Are
           </span>
 
-          <h2 className="font-display font-black text-white text-5xl sm:text-6xl md:text-7xl leading-[1.04] tracking-tight mb-8">
+          <h2 className="font-display font-black text-white text-4xl sm:text-5xl md:text-6xl leading-[1.04] tracking-tight mb-8">
             Ready to Build<br />
             <span className="text-gradient-orange">Something Serious?</span>
           </h2>

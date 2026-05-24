@@ -2425,6 +2425,11 @@ body {
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2468,6 +2473,11 @@ body {
 
   .lg\:text-\[5\.5rem\] {
     font-size: 5.5rem;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
   }
 }
 

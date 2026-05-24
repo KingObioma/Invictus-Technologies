@@ -72,9 +72,9 @@ export default function AboutPage() {
           style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.08) 0%, transparent 70%)" }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <AnimatedSection className="max-w-4xl">
+          <AnimatedSection className="max-w-4xl mx-auto text-center">
             <Badge variant="orange" dot>Our Story</Badge>
-            <h1 className="font-display font-black text-white text-5xl sm:text-6xl md:text-7xl leading-[1.05] tracking-tight mt-6 mb-6">
+            <h1 className="font-display font-black text-white text-4xl sm:text-5xl md:text-6xl leading-[1.05] tracking-tight mt-6 mb-6">
               Built to Build<br />
               <span className="text-gradient-orange">What Others Can&apos;t</span>
             </h1>

@@ -196,7 +196,7 @@ export function ContactPageClient() {
             <Badge variant="orange" dot>
               Let&apos;s Talk
             </Badge>
-            <h1 className="font-display font-black text-white text-5xl sm:text-6xl md:text-7xl leading-[1.05] tracking-tight mt-6 mb-6">
+            <h1 className="font-display font-black text-white text-4xl sm:text-5xl md:text-6xl leading-[1.05] tracking-tight mt-6 mb-6">
               Tell Us What
               <br />
               <span className="text-gradient-orange">You&apos;re Building</span>
