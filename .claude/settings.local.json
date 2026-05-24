@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(New-Item -ItemType Directory -Force \"C:\\\\www\\\\Real-Projects\\\\WebDesignBusiness\\\\Invictus-Technologies\\\\public\")",
-      "Bash(Out-Null)"
-    ]
-  }
-}
