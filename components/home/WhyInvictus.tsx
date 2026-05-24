@@ -50,10 +50,10 @@ export function WhyInvictus() {
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
           {/* Left: header + quote */}
-          <div className="sticky top-24">
+          <div className="lg:sticky lg:top-24">
             <SectionHeader
               eyebrow="Why Invictus"
               title={<>Why Ambitious Companies<br />Choose Invictus</>}
@@ -88,11 +88,11 @@ export function WhyInvictus() {
                       <Icon size={18} className="text-orange-400" />
                     </div>
                     <div className="flex-1">
-                      <div className="flex items-start justify-between gap-4 mb-2">
+                      <div className="flex flex-col gap-2 mb-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
                         <h3 className="font-display font-bold text-white text-base leading-tight">
                           {r.title}
                         </h3>
-                        <span className="shrink-0 text-[10px] font-mono text-orange-400/70 border border-orange-500/20 bg-orange-500/5 px-2 py-0.5 rounded-full whitespace-nowrap">
+                        <span className="self-start shrink-0 text-[10px] font-mono text-orange-400/70 border border-orange-500/20 bg-orange-500/5 px-2 py-0.5 rounded-full whitespace-nowrap">
                           {r.metric}
                         </span>
                       </div>
