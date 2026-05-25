@@ -4,12 +4,13 @@ import { useState } from "react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Badge } from "@/components/ui/Badge";
 import { Mail, Phone, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Kranky } from "next/font/google";
 
 const projectTypes = [
   "Web Application",
   "Mobile App",
   "AI / ML System",
-  "Enterprise Software",
+  "Enterprise Software",Kranky
   "Cloud & DevOps",
   "UI/UX Design",
   "E-Commerce",
