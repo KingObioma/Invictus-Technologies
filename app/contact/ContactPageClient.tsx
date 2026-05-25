@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/Badge";
 import { Mail, Phone, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const projectTypes = [
-  "Web Application",king
+  "Web Application",
   "Mobile App",
   "AI / ML System",
   "Enterprise Software",
