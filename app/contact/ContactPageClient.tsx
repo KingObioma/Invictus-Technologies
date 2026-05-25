@@ -9,7 +9,7 @@ const projectTypes = [
   "Web Application",
   "Mobile App",
   "AI / ML System",
-  "Enterprise Software",kk
+  "Enterprise Software",
   "Cloud & DevOps",
   "UI/UX Design",
   "E-Commerce",
