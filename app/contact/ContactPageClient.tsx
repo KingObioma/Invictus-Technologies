@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin, ArrowRight, CheckCircle2 } from "lucide-react";
 
 const projectTypes = [
   "Web Application",
-  "Mobile App",kk
+  "Mobile App",
   "AI / ML System",
   "Enterprise Software",
   "Cloud & DevOps",
