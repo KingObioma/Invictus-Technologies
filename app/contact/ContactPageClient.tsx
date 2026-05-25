@@ -11,7 +11,7 @@ const projectTypes = [
   "AI / ML System",
   "Enterprise Software",
   "Cloud & DevOps",
-  "UI/UX Design",jkjkj
+  "UI/UX Design",jkjk
   "E-Commerce",
   "Automation / API",
   "Team Augmentation",
