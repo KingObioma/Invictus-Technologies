@@ -6,9 +6,9 @@ function DeltaMark() {
     <svg width="28" height="28" viewBox="0 0 34 34" fill="none">
       <defs>
         <linearGradient id="fm-og" x1="0" y1="34" x2="34" y2="0" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#C2410C" />
-          <stop offset="55%" stopColor="#F97316" />
-          <stop offset="100%" stopColor="#FB923C" />
+          <stop offset="0%" stopColor="#6D28D9" />
+          <stop offset="55%" stopColor="#8B5CF6" />
+          <stop offset="100%" stopColor="#A78BFA" />
         </linearGradient>
       </defs>
       <path d="M17 2L32 31H2L17 2Z" fill="url(#fm-og)" />
@@ -39,7 +39,7 @@ export function Footer() {
   return (
     <footer className="bg-black border-t border-white/5">
       {/* CTA strip */}
-      <div className="border-b border-white/5 bg-gradient-to-r from-black via-orange-950/10 to-black">
+      <div className="border-b border-white/5 bg-gradient-to-r from-black via-violet-950/10 to-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div>
             <p className="font-display font-bold text-white text-2xl sm:text-3xl">
@@ -51,7 +51,7 @@ export function Footer() {
           </div>
           <Link
             href="/contact"
-            className="shrink-0 flex items-center gap-2 px-6 py-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-display font-semibold tracking-wide transition-all duration-200 shadow-orange-sm hover:shadow-orange-md"
+            className="shrink-0 flex items-center gap-2 px-6 py-3 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-display font-semibold tracking-wide transition-all duration-200 shadow-orange-sm hover:shadow-orange-md"
           >
             Start the Conversation
             <ArrowUpRight size={16} />
@@ -82,20 +82,20 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <a
                 href="mailto:invictuskapital@gmail.com"
-                className="flex items-center gap-3 text-silver-500 hover:text-orange-400 text-sm transition-colors group"
+                className="flex items-center gap-3 text-silver-500 hover:text-violet-400 text-sm transition-colors group"
               >
-                <Mail size={14} className="text-orange-500 shrink-0" />
+                <Mail size={14} className="text-violet-400 shrink-0" />
                 invictuskapital@gmail.com
               </a>
               <a
                 href="tel:+2347035910594"
-                className="flex items-center gap-3 text-silver-500 hover:text-orange-400 text-sm transition-colors"
+                className="flex items-center gap-3 text-silver-500 hover:text-violet-400 text-sm transition-colors"
               >
-                <Phone size={14} className="text-orange-500 shrink-0" />
+                <Phone size={14} className="text-violet-400 shrink-0" />
                 +234 703 591 0594
               </a>
               <span className="flex items-center gap-3 text-silver-500 text-sm">
-                <MapPin size={14} className="text-orange-500 shrink-0" />
+                <MapPin size={14} className="text-violet-400 shrink-0" />
                 Lagos, Nigeria — Serving globally
               </span>
             </div>

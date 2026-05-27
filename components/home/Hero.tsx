@@ -77,12 +77,12 @@ export function Hero() {
 
       {/* Orange orb — center */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full pointer-events-none"
-        style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.1) 0%, transparent 65%)" }}
+        style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.1) 0%, transparent 65%)" }}
       />
 
       {/* Orange orb — top right */}
       <div className="absolute -top-40 right-0 w-[500px] h-[500px] rounded-full pointer-events-none"
-        style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.07) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.07) 0%, transparent 70%)" }}
       />
 
       {/* Silver orb — bottom left */}
@@ -108,8 +108,8 @@ export function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-8"
           >
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-orange-500/25 bg-orange-500/8 text-orange-400 text-xs font-mono font-medium tracking-[0.18em] uppercase">
-              <span className="w-1.5 h-1.5 rounded-full bg-orange-400 animate-pulse" />
+            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-violet-500/25 bg-violet-500/8 text-violet-400 text-xs font-mono font-medium tracking-[0.18em] uppercase">
+              <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
               Global Technology Partner
             </span>
           </motion.div>
@@ -146,7 +146,7 @@ export function Hero() {
           >
             <Link
               href="/contact"
-              className="group flex items-center gap-2.5 px-8 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-display font-bold text-lg tracking-wide transition-all duration-200 shadow-orange-glow hover:shadow-orange-md"
+              className="group flex items-center gap-2.5 px-8 py-4 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-display font-bold text-lg tracking-wide transition-all duration-200 shadow-orange-glow hover:shadow-orange-md"
             >
               Start Your Project
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-200" />

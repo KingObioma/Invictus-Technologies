@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --orange: #F97316;
-  --orange-dim: rgba(249, 115, 22, 0.1);
-  --orange-glow: rgba(249, 115, 22, 0.3);
+  --violet: #8B5CF6;
+  --violet-dim: rgba(139, 92, 246, 0.1);
+  --violet-glow: rgba(139, 92, 246, 0.3);
   --silver: #94A3B8;
   --bg: #000000;
   --surface: #0A0A0A;
@@ -31,7 +31,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(249, 115, 22, 0.25);
+  background-color: rgba(139, 92, 246, 0.30);
   color: #ffffff;
 }
 
@@ -42,13 +42,13 @@ body {
   background: #0A0A0A;
 }
 ::-webkit-scrollbar-thumb {
-  background: #F97316;
+  background: #8B5CF6;
   border-radius: 2px;
 }
 
 /* ─── Gradient text utilities ─────────────────────────────── */
 .text-gradient-orange {
-  background: linear-gradient(135deg, #FB923C 0%, #F97316 45%, #EA580C 100%);
+  background: linear-gradient(135deg, #C4B5FD 0%, #8B5CF6 45%, #7C3AED 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -62,7 +62,7 @@ body {
 }
 
 .text-gradient-fire {
-  background: linear-gradient(90deg, #FB923C, #F97316, #C2410C, #F97316, #FB923C);
+  background: linear-gradient(90deg, #C4B5FD, #8B5CF6, #6D28D9, #8B5CF6, #C4B5FD);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -102,8 +102,8 @@ body {
 }
 
 .glass-card-orange {
-  background: rgba(249, 115, 22, 0.04);
-  border: 1px solid rgba(249, 115, 22, 0.18);
+  background: rgba(139, 92, 246, 0.04);
+  border: 1px solid rgba(139, 92, 246, 0.18);
   backdrop-filter: blur(16px);
 }
 
@@ -111,10 +111,10 @@ body {
   transition: all 0.3s ease;
 }
 .card-hover:hover {
-  border-color: rgba(249, 115, 22, 0.3);
-  background: rgba(249, 115, 22, 0.04);
+  border-color: rgba(139, 92, 246, 0.3);
+  background: rgba(139, 92, 246, 0.04);
   transform: translateY(-2px);
-  box-shadow: 0 8px 40px rgba(249, 115, 22, 0.12);
+  box-shadow: 0 8px 40px rgba(139, 92, 246, 0.12);
 }
 
 /* ─── Animated gradient border ────────────────────────────── */
@@ -127,7 +127,7 @@ body {
   position: absolute;
   inset: -1px;
   border-radius: inherit;
-  background: linear-gradient(135deg, rgba(249,115,22,0.5), rgba(194,65,12,0.2), rgba(249,115,22,0.5));
+  background: linear-gradient(135deg, rgba(139,92,246,0.5), rgba(109,40,217,0.2), rgba(139,92,246,0.5));
   background-size: 200% 200%;
   animation: borderSpin 4s linear infinite;
   z-index: -1;
@@ -152,7 +152,7 @@ body {
 /* ─── Orange glow line ────────────────────────────────────── */
 .orange-line {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(249,115,22,0.6), transparent);
+  background: linear-gradient(90deg, transparent, rgba(139,92,246,0.6), transparent);
 }
 
 /* ─── Number accent ───────────────────────────────────────── */

@@ -23,13 +23,13 @@ export function Button({
   disabled,
 }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center gap-2 font-display font-semibold tracking-wide rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500/40 disabled:opacity-50 disabled:cursor-not-allowed";
+    "inline-flex items-center justify-center gap-2 font-display font-semibold tracking-wide rounded-xl transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-violet-500/40 disabled:opacity-50 disabled:cursor-not-allowed";
 
   const variants = {
     primary:
-      "bg-orange-500 hover:bg-orange-600 text-white shadow-orange-glow hover:shadow-orange-md",
+      "bg-violet-600 hover:bg-violet-700 text-white shadow-orange-glow hover:shadow-orange-md",
     secondary:
-      "bg-transparent text-orange-400 border border-orange-500/40 hover:border-orange-500 hover:bg-orange-500/8",
+      "bg-transparent text-violet-400 border border-violet-500/40 hover:border-violet-500 hover:bg-violet-500/8",
     ghost:
       "bg-transparent text-white border border-white/12 hover:border-white/25 hover:bg-white/4",
   };

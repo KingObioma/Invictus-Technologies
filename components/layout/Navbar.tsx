@@ -26,9 +26,9 @@ function DeltaMark({ className }: { className?: string }) {
     >
       <defs>
         <linearGradient id="nm-og" x1="0" y1="34" x2="34" y2="0" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#C2410C" />
-          <stop offset="55%" stopColor="#F97316" />
-          <stop offset="100%" stopColor="#FB923C" />
+          <stop offset="0%" stopColor="#6D28D9" />
+          <stop offset="55%" stopColor="#8B5CF6" />
+          <stop offset="100%" stopColor="#A78BFA" />
         </linearGradient>
         <linearGradient id="nm-sg" x1="17" y1="3" x2="0" y2="31" gradientUnits="userSpaceOnUse">
           <stop offset="0%" stopColor="#E2E8F0" stopOpacity="0.9" />
@@ -83,7 +83,7 @@ export function Navbar() {
             <Link href="/" className="flex items-center gap-3 group">
               <div className="relative">
                 <DeltaMark className="transition-transform duration-300 group-hover:scale-105" />
-                <div className="absolute inset-0 rounded-full bg-orange-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 rounded-full bg-violet-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="flex flex-col leading-none gap-0.5">
                 <span className="font-display font-bold text-white text-[1.2rem] tracking-tight leading-none">
@@ -104,7 +104,7 @@ export function Navbar() {
                   className={cn(
                     "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200",
                     pathname === link.href
-                      ? "text-orange-400 bg-orange-500/10"
+                      ? "text-violet-400 bg-violet-500/10"
                       : "text-silver-400 hover:text-white hover:bg-white/5"
                   )}
                 >
@@ -117,7 +117,7 @@ export function Navbar() {
             <div className="flex items-center gap-3">
               <Link
                 href="/contact"
-                className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white text-sm font-display font-semibold tracking-wide transition-all duration-200 shadow-orange-sm hover:shadow-orange-md"
+                className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-violet-600 hover:bg-violet-700 text-white text-sm font-display font-semibold tracking-wide transition-all duration-200 shadow-orange-sm hover:shadow-orange-md"
               >
                 Start a Project
               </Link>
@@ -150,8 +150,8 @@ export function Navbar() {
                 className={cn(
                   "px-4 py-4 rounded-xl text-2xl font-display font-bold transition-all duration-300",
                   pathname === link.href
-                    ? "text-orange-400"
-                    : "text-white hover:text-orange-400",
+                    ? "text-violet-400"
+                    : "text-white hover:text-violet-400",
                   mobileOpen ? "translate-x-0 opacity-100" : "-translate-x-4 opacity-0"
                 )}
               >
@@ -163,7 +163,7 @@ export function Navbar() {
           <div className="mt-8">
             <Link
               href="/contact"
-              className="flex items-center justify-center w-full py-4 rounded-2xl bg-orange-500 hover:bg-orange-600 text-white text-xl font-display font-bold tracking-wide transition-colors shadow-orange-md"
+              className="flex items-center justify-center w-full py-4 rounded-2xl bg-violet-600 hover:bg-violet-700 text-white text-xl font-display font-bold tracking-wide transition-colors shadow-orange-md"
             >
               Start a Project
             </Link>
@@ -172,13 +172,13 @@ export function Navbar() {
           <div className="mt-auto border-t border-white/8 pt-6 flex flex-col gap-2">
             <a
               href="mailto:invictuskapital@gmail.com"
-              className="text-silver-500 text-sm font-mono hover:text-orange-400 transition-colors"
+              className="text-silver-500 text-sm font-mono hover:text-violet-400 transition-colors"
             >
               invictuskapital@gmail.com
             </a>
             <a
               href="tel:+2347035910594"
-              className="text-silver-500 text-sm font-mono hover:text-orange-400 transition-colors"
+              className="text-silver-500 text-sm font-mono hover:text-violet-400 transition-colors"
             >
               +234 703 591 0594
             </a>

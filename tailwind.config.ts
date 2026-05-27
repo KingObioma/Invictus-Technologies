@@ -13,12 +13,6 @@ const config: Config = {
         "surface-2": "#111111",
         "surface-3": "#171717",
         coal: "#1A1A1A",
-        ember: {
-          400: "#FB923C",
-          500: "#F97316",
-          600: "#EA580C",
-          700: "#C2410C",
-        },
         silver: {
           200: "#F1F5F9",
           300: "#E2E8F0",
@@ -36,8 +30,8 @@ const config: Config = {
       backgroundImage: {
         "grid-dim": "linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px)",
         "grid-bright": "linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)",
-        "orange-radial": "radial-gradient(ellipse at center, rgba(249,115,22,0.15) 0%, transparent 70%)",
-        "orange-radial-sm": "radial-gradient(ellipse at center, rgba(249,115,22,0.1) 0%, transparent 60%)",
+        "orange-radial": "radial-gradient(ellipse at center, rgba(139,92,246,0.15) 0%, transparent 70%)",
+        "orange-radial-sm": "radial-gradient(ellipse at center, rgba(139,92,246,0.10) 0%, transparent 60%)",
       },
       backgroundSize: {
         "grid-60": "60px 60px",
@@ -60,10 +54,10 @@ const config: Config = {
         },
       },
       boxShadow: {
-        "orange-sm": "0 0 20px rgba(249,115,22,0.2)",
-        "orange-md": "0 0 40px rgba(249,115,22,0.3)",
-        "orange-lg": "0 0 80px rgba(249,115,22,0.4)",
-        "orange-glow": "0 4px 32px rgba(249,115,22,0.35)",
+        "orange-sm": "0 0 20px rgba(139,92,246,0.2)",
+        "orange-md": "0 0 40px rgba(139,92,246,0.3)",
+        "orange-lg": "0 0 80px rgba(139,92,246,0.4)",
+        "orange-glow": "0 4px 32px rgba(139,92,246,0.35)",
         "card": "0 1px 3px rgba(0,0,0,0.5), 0 8px 24px rgba(0,0,0,0.3)",
       },
     },
