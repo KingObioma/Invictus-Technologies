@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -51,7 +51,7 @@ function FAQItem({ item, index }: { item: typeof faqs[0]; index: number }) {
       transition={{ delay: index * 0.05 }}
       className={`border rounded-xl transition-all duration-200 ${
         open
-          ? "border-orange-500/30 bg-orange-500/[0.03]"
+          ? "border-violet-500/30 bg-violet-500/[0.03]"
           : "border-white/6 bg-white/[0.015] hover:border-white/12"
       }`}
     >
@@ -61,7 +61,7 @@ function FAQItem({ item, index }: { item: typeof faqs[0]; index: number }) {
       >
         <span className="font-display font-semibold text-white text-base pr-4">{item.q}</span>
         <span className={`shrink-0 w-7 h-7 rounded-full flex items-center justify-center border transition-colors ${
-          open ? "border-orange-500/50 bg-orange-500/10 text-orange-400" : "border-white/10 text-silver-500"
+          open ? "border-violet-500/50 bg-violet-500/10 text-violet-400" : "border-white/10 text-silver-500"
         }`}>
           {open ? <Minus size={14} /> : <Plus size={14} />}
         </span>
@@ -107,3 +107,4 @@ export function FAQSection() {
     </section>
   );
 }
+

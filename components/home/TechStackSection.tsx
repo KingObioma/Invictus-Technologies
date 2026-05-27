@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { SectionHeader } from "@/components/ui/SectionHeader";
@@ -71,7 +71,7 @@ export function TechStackSection() {
                     {cat.techs.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1.5 rounded-lg text-sm font-mono border border-white/6 bg-white/[0.02] text-silver-400 hover:border-orange-500/30 hover:text-orange-400 hover:bg-orange-500/5 transition-all duration-200 cursor-default"
+                        className="px-3 py-1.5 rounded-lg text-sm font-mono border border-white/6 bg-white/[0.02] text-silver-400 hover:border-violet-500/30 hover:text-violet-400 hover:bg-violet-500/5 transition-all duration-200 cursor-default"
                       >
                         {tech}
                       </span>
@@ -89,7 +89,7 @@ export function TechStackSection() {
         <AnimatedSection delay={0.3} className="mt-12 text-center">
           <Link
             href="/technology"
-            className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-display font-semibold transition-colors"
+            className="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 font-display font-semibold transition-colors"
           >
             Explore our full technology capabilities
             <ArrowUpRight size={16} />
@@ -99,3 +99,4 @@ export function TechStackSection() {
     </section>
   );
 }
+

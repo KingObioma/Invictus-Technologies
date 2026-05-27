@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Badge } from "@/components/ui/Badge";
@@ -69,7 +69,7 @@ export default function AboutPage() {
       <section className="relative pt-36 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
         <div className="absolute top-1/2 right-0 w-[500px] h-[500px] rounded-full pointer-events-none -translate-y-1/2"
-          style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.08) 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 70%)" }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
@@ -92,8 +92,8 @@ export default function AboutPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <AnimatedSection direction="left">
-              <div className="p-8 rounded-2xl border border-orange-500/20 bg-orange-500/5 h-full">
-                <span className="text-xs font-mono text-orange-400 uppercase tracking-[0.2em] mb-4 block">Mission</span>
+              <div className="p-8 rounded-2xl border border-violet-500/20 bg-violet-500/5 h-full">
+                <span className="text-xs font-mono text-violet-400 uppercase tracking-[0.2em] mb-4 block">Mission</span>
                 <h2 className="font-display font-bold text-white text-2xl mb-4 leading-tight">
                   Engineer digital infrastructure that powers businesses into their next chapter.
                 </h2>
@@ -131,8 +131,8 @@ export default function AboutPage() {
                 title="The Company Behind the Code"
                 align="left"
               />
-              <div className="mt-8 p-6 rounded-2xl border border-orange-500/15 bg-orange-500/[0.03]">
-                <p className="font-display font-bold text-orange-400 text-4xl stat-number mb-2">50+</p>
+              <div className="mt-8 p-6 rounded-2xl border border-violet-500/15 bg-violet-500/[0.03]">
+                <p className="font-display font-bold text-violet-400 text-4xl stat-number mb-2">50+</p>
                 <p className="text-silver-500 text-sm">Projects delivered across Africa, Europe, and North America</p>
               </div>
             </AnimatedSection>
@@ -181,9 +181,9 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {values.map((v, i) => (
               <AnimatedSection key={i} delay={i * 0.07}>
-                <div className="p-6 rounded-2xl border border-white/7 bg-white/[0.015] hover:border-orange-500/20 transition-all duration-300 h-full">
+                <div className="p-6 rounded-2xl border border-white/7 bg-white/[0.015] hover:border-violet-500/20 transition-all duration-300 h-full">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="font-display font-black text-orange-500/40 text-3xl stat-number">
+                    <span className="font-display font-black text-violet-500/40 text-3xl stat-number">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
@@ -209,7 +209,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {whyUs.map((w, i) => (
               <AnimatedSection key={i} delay={i * 0.08}>
-                <div className="p-8 rounded-2xl border border-white/7 bg-white/[0.015] hover:border-orange-500/20 transition-all duration-300">
+                <div className="p-8 rounded-2xl border border-white/7 bg-white/[0.015] hover:border-violet-500/20 transition-all duration-300">
                   <h3 className="font-display font-bold text-white text-xl mb-4">{w.title}</h3>
                   <p className="text-silver-400 leading-relaxed">{w.description}</p>
                 </div>
@@ -233,7 +233,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-display font-bold text-lg tracking-wide transition-all duration-200 shadow-orange-glow"
+              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-display font-bold text-lg tracking-wide transition-all duration-200 shadow-orange-glow"
             >
               Start the Conversation
               <ArrowRight size={18} />
@@ -244,3 +244,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

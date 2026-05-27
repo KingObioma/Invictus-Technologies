@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -56,7 +56,7 @@ export function Process() {
     <section className="section-pad bg-black relative overflow-hidden">
       {/* Subtle side glow */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full pointer-events-none opacity-30"
-        style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.08) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 70%)" }}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -77,26 +77,26 @@ export function Process() {
                 initial={{ opacity: 0, x: -24 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.55, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                className="group flex flex-col sm:flex-row gap-6 p-6 sm:p-8 rounded-2xl border border-white/6 bg-white/[0.015] hover:border-orange-500/25 hover:bg-orange-500/[0.02] transition-all duration-300"
+                className="group flex flex-col sm:flex-row gap-6 p-6 sm:p-8 rounded-2xl border border-white/6 bg-white/[0.015] hover:border-violet-500/25 hover:bg-violet-500/[0.02] transition-all duration-300"
               >
                 {/* Number + connector */}
                 <div className="flex sm:flex-col items-center sm:items-start gap-4 sm:gap-2 shrink-0">
                   <span className="font-display font-black text-4xl text-gradient-orange leading-none stat-number">
                     {step.number}
                   </span>
-                  <div className="hidden sm:block w-px flex-1 bg-gradient-to-b from-orange-500/30 to-transparent mt-2 ml-2 min-h-[40px]" />
+                  <div className="hidden sm:block w-px flex-1 bg-gradient-to-b from-violet-500/30 to-transparent mt-2 ml-2 min-h-[40px]" />
                 </div>
 
                 {/* Icon */}
-                <div className="hidden sm:flex w-12 h-12 shrink-0 rounded-xl bg-orange-500/10 border border-orange-500/20 items-center justify-center self-start">
-                  <Icon size={20} className="text-orange-400" />
+                <div className="hidden sm:flex w-12 h-12 shrink-0 rounded-xl bg-violet-500/10 border border-violet-500/20 items-center justify-center self-start">
+                  <Icon size={20} className="text-violet-400" />
                 </div>
 
                 {/* Content */}
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-3">
-                    <div className="sm:hidden w-9 h-9 shrink-0 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center">
-                      <Icon size={16} className="text-orange-400" />
+                    <div className="sm:hidden w-9 h-9 shrink-0 rounded-lg bg-violet-500/10 border border-violet-500/20 flex items-center justify-center">
+                      <Icon size={16} className="text-violet-400" />
                     </div>
                     <h3 className="font-display font-bold text-white text-xl">{step.title}</h3>
                   </div>
@@ -113,3 +113,4 @@ export function Process() {
     </section>
   );
 }
+

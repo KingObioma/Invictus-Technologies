@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Badge } from "@/components/ui/Badge";
@@ -212,7 +212,7 @@ export default function ServicesPage() {
       <section className="relative pt-36 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none"
-          style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.1) 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.1) 0%, transparent 70%)" }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
@@ -239,18 +239,18 @@ export default function ServicesPage() {
                 <AnimatedSection key={service.id} delay={i * 0.04}>
                   <div
                     id={service.id}
-                    className="group p-8 sm:p-10 rounded-2xl border border-white/7 bg-white/[0.015] hover:border-orange-500/25 transition-all duration-300 scroll-mt-24"
+                    className="group p-8 sm:p-10 rounded-2xl border border-white/7 bg-white/[0.015] hover:border-violet-500/25 transition-all duration-300 scroll-mt-24"
                   >
                     {/* Header */}
                     <div className="flex flex-col sm:flex-row sm:items-start gap-5 mb-8">
-                      <div className="w-12 h-12 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0">
-                        <Icon size={22} className="text-orange-400" />
+                      <div className="w-12 h-12 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center shrink-0">
+                        <Icon size={22} className="text-violet-400" />
                       </div>
                       <div>
                         <h2 className="font-display font-bold text-white text-2xl sm:text-3xl mb-2">
                           {service.title}
                         </h2>
-                        <p className="text-orange-400 font-mono text-sm">{service.tagline}</p>
+                        <p className="text-violet-400 font-mono text-sm">{service.tagline}</p>
                       </div>
                     </div>
 
@@ -262,13 +262,13 @@ export default function ServicesPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
                       <div>
                         <h3 className="font-display font-semibold text-white text-sm uppercase tracking-[0.15em] mb-4 flex items-center gap-2">
-                          <span className="w-1 h-4 rounded-full bg-orange-500" />
+                          <span className="w-1 h-4 rounded-full bg-violet-500" />
                           What You Get
                         </h3>
                         <ul className="flex flex-col gap-3">
                           {service.benefits.map((b, j) => (
                             <li key={j} className="flex items-start gap-3 text-silver-400 text-sm">
-                              <CheckCircle2 size={15} className="text-orange-500 shrink-0 mt-0.5" />
+                              <CheckCircle2 size={15} className="text-violet-500 shrink-0 mt-0.5" />
                               {b}
                             </li>
                           ))}
@@ -302,7 +302,7 @@ export default function ServicesPage() {
                     {/* CTA */}
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-display font-semibold text-sm tracking-wide transition-all duration-200 shadow-orange-sm"
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-display font-semibold text-sm tracking-wide transition-all duration-200 shadow-orange-sm"
                     >
                       Discuss This Service
                       <ArrowRight size={15} />
@@ -317,3 +317,4 @@ export default function ServicesPage() {
     </div>
   );
 }
+

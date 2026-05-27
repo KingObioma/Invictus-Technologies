@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
@@ -14,7 +14,7 @@ const caseStudies = [
     challenge: "Legacy core banking system causing 3-second delays and 12% transaction error rate",
     outcome: "95% reduction in transaction latency. 0.01% error rate. $8M+ in daily volume.",
     techs: ["Next.js", "Node.js", "PostgreSQL", "Redis", "AWS ECS"],
-    color: "from-orange-950/40 via-transparent to-transparent",
+    color: "from-violet-950/40 via-transparent to-transparent",
     metric: { value: "95%", label: "Latency Reduction" },
   },
   {
@@ -24,7 +24,7 @@ const caseStudies = [
     challenge: "Manual soil analysis taking 2 weeks, unpredictable crop yields across 50,000+ hectares",
     outcome: "23% increase in average yield. 87% reduction in analysis time. $12M additional annual revenue.",
     techs: ["Python", "TensorFlow", "React", "GCP", "Earth Engine API"],
-    color: "from-orange-900/30 via-transparent to-transparent",
+    color: "from-violet-900/30 via-transparent to-transparent",
     metric: { value: "23%", label: "Yield Improvement" },
   },
   {
@@ -34,7 +34,7 @@ const caseStudies = [
     challenge: "40% late deliveries, no real-time visibility across 8 countries, manual route planning",
     outcome: "67% reduction in late deliveries. Route optimization automated. 45% fuel cost reduction.",
     techs: ["React Native", "Next.js", "Node.js", "Socket.io", "Redis"],
-    color: "from-orange-950/40 via-transparent to-transparent",
+    color: "from-violet-950/40 via-transparent to-transparent",
     metric: { value: "67%", label: "Fewer Late Deliveries" },
   },
 ];
@@ -57,7 +57,7 @@ export function CaseStudiesPreview() {
           />
           <Link
             href="/case-studies"
-            className="shrink-0 inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-display font-semibold transition-colors text-sm"
+            className="shrink-0 inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 font-display font-semibold transition-colors text-sm"
           >
             All case studies
             <ArrowUpRight size={14} />
@@ -74,7 +74,7 @@ export function CaseStudiesPreview() {
             >
               <Link
                 href={`/case-studies#${cs.id}`}
-                className={`group flex flex-col h-full rounded-2xl border border-white/7 bg-gradient-to-br ${cs.color} overflow-hidden hover:border-orange-500/30 transition-all duration-300 cursor-pointer`}
+                className={`group flex flex-col h-full rounded-2xl border border-white/7 bg-gradient-to-br ${cs.color} overflow-hidden hover:border-violet-500/30 transition-all duration-300 cursor-pointer`}
               >
                 {/* Metric header */}
                 <div className="px-6 py-5 border-b border-white/5 flex items-center justify-between">
@@ -91,7 +91,7 @@ export function CaseStudiesPreview() {
 
                 {/* Content */}
                 <div className="flex flex-col flex-1 p-6 gap-4">
-                  <h3 className="font-display font-bold text-white text-xl group-hover:text-orange-200 transition-colors">
+                  <h3 className="font-display font-bold text-white text-xl group-hover:text-violet-200 transition-colors">
                     {cs.title}
                   </h3>
                   <div>
@@ -114,7 +114,7 @@ export function CaseStudiesPreview() {
                 </div>
 
                 <div className="px-6 py-4 border-t border-white/5">
-                  <span className="flex items-center gap-1 text-orange-500/50 group-hover:text-orange-400 text-xs font-mono transition-colors">
+                  <span className="flex items-center gap-1 text-violet-500/50 group-hover:text-violet-400 text-xs font-mono transition-colors">
                     Read case study <ArrowUpRight size={11} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                   </span>
                 </div>
@@ -126,3 +126,4 @@ export function CaseStudiesPreview() {
     </section>
   );
 }
+

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -46,7 +46,7 @@ export function WhyInvictus() {
 
       {/* Right side glow */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 rounded-full pointer-events-none opacity-50"
-        style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.08) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.08) 0%, transparent 70%)" }}
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,11 +61,11 @@ export function WhyInvictus() {
               description="Most tech teams can write code. Very few can engineer systems that survive the real world — high load, edge cases, evolving requirements, and the pressure of actual customers."
             />
 
-            <blockquote className="mt-10 p-6 rounded-2xl border border-orange-500/20 bg-orange-500/5">
+            <blockquote className="mt-10 p-6 rounded-2xl border border-violet-500/20 bg-violet-500/5">
               <p className="text-white font-display font-medium text-lg leading-relaxed italic">
                 &ldquo;We don&apos;t just build software. We build infrastructure for growth, intelligence for decisions, and systems for scale.&rdquo;
               </p>
-              <footer className="mt-4 text-orange-400 text-sm font-mono">
+              <footer className="mt-4 text-violet-400 text-sm font-mono">
                 — Invictus Engineering Philosophy
               </footer>
             </blockquote>
@@ -81,18 +81,18 @@ export function WhyInvictus() {
                   initial={{ opacity: 0, y: 24 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.55, delay: i * 0.1, ease: [0.22, 1, 0.36, 1] }}
-                  className="group p-6 rounded-2xl border border-white/6 bg-white/[0.015] hover:border-orange-500/25 hover:bg-orange-500/[0.025] transition-all duration-300"
+                  className="group p-6 rounded-2xl border border-white/6 bg-white/[0.015] hover:border-violet-500/25 hover:bg-violet-500/[0.025] transition-all duration-300"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0">
-                      <Icon size={18} className="text-orange-400" />
+                    <div className="w-10 h-10 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center shrink-0">
+                      <Icon size={18} className="text-violet-400" />
                     </div>
                     <div className="flex-1">
                       <div className="flex flex-col gap-2 mb-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
                         <h3 className="font-display font-bold text-white text-base leading-tight">
                           {r.title}
                         </h3>
-                        <span className="self-start shrink-0 text-[10px] font-mono text-orange-400/70 border border-orange-500/20 bg-orange-500/5 px-2 py-0.5 rounded-full whitespace-nowrap">
+                        <span className="self-start shrink-0 text-[10px] font-mono text-violet-400/70 border border-violet-500/20 bg-violet-500/5 px-2 py-0.5 rounded-full whitespace-nowrap">
                           {r.metric}
                         </span>
                       </div>
@@ -109,3 +109,4 @@ export function WhyInvictus() {
     </section>
   );
 }
+

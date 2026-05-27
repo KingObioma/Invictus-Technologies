@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Badge } from "@/components/ui/Badge";
@@ -109,7 +109,7 @@ const categories = [
 ];
 
 const levelColors = {
-  Expert: "border-orange-500/40 bg-orange-500/10 text-orange-400",
+  Expert: "border-violet-500/40 bg-violet-500/10 text-violet-400",
   Advanced: "border-white/10 bg-white/[0.03] text-silver-500",
 };
 
@@ -120,7 +120,7 @@ export default function TechnologyPage() {
       <section className="relative pt-36 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] rounded-full pointer-events-none"
-          style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.1) 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.1) 0%, transparent 70%)" }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
@@ -145,7 +145,7 @@ export default function TechnologyPage() {
               <a
                 key={cat.id}
                 href={`#${cat.id}`}
-                className="shrink-0 px-4 py-1.5 rounded-lg border border-white/8 text-silver-500 hover:border-orange-500/30 hover:text-orange-400 text-sm font-mono transition-all"
+                className="shrink-0 px-4 py-1.5 rounded-lg border border-white/8 text-silver-500 hover:border-violet-500/30 hover:text-violet-400 text-sm font-mono transition-all"
               >
                 {cat.label}
               </a>
@@ -164,7 +164,7 @@ export default function TechnologyPage() {
                   {/* Category header */}
                   <div className="mb-8 pb-6 border-b border-white/5">
                     <div className="flex items-center gap-3 mb-3">
-                      <span className="font-display font-black text-4xl text-orange-500/25 stat-number">
+                      <span className="font-display font-black text-4xl text-violet-500/25 stat-number">
                         {String(ci + 1).padStart(2, "0")}
                       </span>
                       <h2 className="font-display font-bold text-white text-3xl">{cat.label}</h2>
@@ -177,10 +177,10 @@ export default function TechnologyPage() {
                     {cat.techs.map((tech, ti) => (
                       <div
                         key={ti}
-                        className="p-5 rounded-xl border border-white/6 bg-white/[0.015] hover:border-orange-500/25 hover:bg-orange-500/[0.02] transition-all duration-300 group"
+                        className="p-5 rounded-xl border border-white/6 bg-white/[0.015] hover:border-violet-500/25 hover:bg-violet-500/[0.02] transition-all duration-300 group"
                       >
                         <div className="flex items-start justify-between gap-2 mb-3">
-                          <h3 className="font-display font-bold text-white text-base group-hover:text-orange-200 transition-colors">
+                          <h3 className="font-display font-bold text-white text-base group-hover:text-violet-200 transition-colors">
                             {tech.name}
                           </h3>
                           <span className={`shrink-0 px-2 py-0.5 rounded-full text-[10px] font-mono border ${levelColors[tech.level as keyof typeof levelColors]}`}>
@@ -211,7 +211,7 @@ export default function TechnologyPage() {
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-display font-bold text-lg tracking-wide transition-all duration-200 shadow-orange-glow"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-violet-600 hover:bg-violet-700 text-white font-display font-bold text-lg tracking-wide transition-all duration-200 shadow-orange-glow"
               >
                 Discuss Your Project
                 <ArrowRight size={18} />
@@ -223,3 +223,4 @@ export default function TechnologyPage() {
     </div>
   );
 }
+

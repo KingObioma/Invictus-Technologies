@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -39,7 +39,7 @@ export function Testimonials() {
     <section className="section-pad bg-black relative overflow-hidden">
       {/* Center glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] rounded-full pointer-events-none opacity-40"
-        style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.07) 0%, transparent 70%)" }}
+        style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.07) 0%, transparent 70%)" }}
       />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,10 +58,10 @@ export function Testimonials() {
               initial={{ opacity: 0, y: 24 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.55, delay: i * 0.12, ease: [0.22, 1, 0.36, 1] }}
-              className="flex flex-col p-7 rounded-2xl border border-white/7 bg-white/[0.015] hover:border-orange-500/20 hover:bg-orange-500/[0.02] transition-all duration-300"
+              className="flex flex-col p-7 rounded-2xl border border-white/7 bg-white/[0.015] hover:border-violet-500/20 hover:bg-violet-500/[0.02] transition-all duration-300"
             >
               {/* Quote mark */}
-              <div className="text-orange-500/40 font-display font-black text-6xl leading-none mb-4 select-none">
+              <div className="text-violet-500/40 font-display font-black text-6xl leading-none mb-4 select-none">
                 &ldquo;
               </div>
 
@@ -70,7 +70,7 @@ export function Testimonials() {
               </blockquote>
 
               <div className="border-t border-white/5 pt-5 flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-600 to-orange-800 flex items-center justify-center text-white font-display font-bold text-sm shrink-0">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-violet-600 to-violet-800 flex items-center justify-center text-white font-display font-bold text-sm shrink-0">
                   {t.initials}
                 </div>
                 <div>
@@ -86,3 +86,4 @@ export function Testimonials() {
     </section>
   );
 }
+

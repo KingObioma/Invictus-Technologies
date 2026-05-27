@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
@@ -42,9 +42,9 @@ function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center text-center py-16 px-8 rounded-2xl border border-orange-500/25 bg-orange-500/[0.03]">
-        <div className="w-16 h-16 rounded-full bg-orange-500/15 border border-orange-500/30 flex items-center justify-center mb-6">
-          <CheckCircle2 size={30} className="text-orange-400" />
+      <div className="flex flex-col items-center justify-center text-center py-16 px-8 rounded-2xl border border-violet-500/25 bg-violet-500/[0.03]">
+        <div className="w-16 h-16 rounded-full bg-violet-500/15 border border-violet-500/30 flex items-center justify-center mb-6">
+          <CheckCircle2 size={30} className="text-violet-400" />
         </div>
         <h3 className="font-display font-bold text-white text-2xl mb-3">Message Received</h3>
         <p className="text-silver-400 leading-relaxed max-w-sm">
@@ -65,7 +65,7 @@ function ContactForm() {
             type="text"
             required
             placeholder="Jane Smith"
-            className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-orange-500/50 focus:bg-orange-500/[0.02] transition-all text-sm"
+            className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/[0.02] transition-all text-sm"
           />
         </div>
         <div>
@@ -76,7 +76,7 @@ function ContactForm() {
             type="email"
             required
             placeholder="jane@company.com"
-            className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-orange-500/50 focus:bg-orange-500/[0.02] transition-all text-sm"
+            className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/[0.02] transition-all text-sm"
           />
         </div>
       </div>
@@ -89,7 +89,7 @@ function ContactForm() {
           <input
             type="text"
             placeholder="Acme Corp"
-            className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-orange-500/50 focus:bg-orange-500/[0.02] transition-all text-sm"
+            className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/[0.02] transition-all text-sm"
           />
         </div>
         <div>
@@ -99,7 +99,7 @@ function ContactForm() {
           <input
             type="text"
             placeholder="CTO, Founder, VP Engineering..."
-            className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-orange-500/50 focus:bg-orange-500/[0.02] transition-all text-sm"
+            className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/[0.02] transition-all text-sm"
           />
         </div>
       </div>
@@ -111,7 +111,7 @@ function ContactForm() {
         <select
           required
           defaultValue=""
-          className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white focus:outline-none focus:border-orange-500/50 focus:bg-orange-500/[0.02] transition-all text-sm appearance-none cursor-pointer"
+          className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/[0.02] transition-all text-sm appearance-none cursor-pointer"
         >
           <option value="" disabled className="bg-black text-silver-500">
             Select a service type...
@@ -132,7 +132,7 @@ function ContactForm() {
           {budgets.map((b) => (
             <label
               key={b}
-              className="flex items-center gap-2 px-3 py-2 rounded-lg border border-white/8 bg-white/[0.02] cursor-pointer hover:border-orange-500/30 hover:bg-orange-500/[0.02] transition-all text-sm text-silver-400"
+              className="flex items-center gap-2 px-3 py-2 rounded-lg border border-white/8 bg-white/[0.02] cursor-pointer hover:border-violet-500/30 hover:bg-violet-500/[0.02] transition-all text-sm text-silver-400"
             >
               <input type="radio" name="budget" value={b} className="sr-only" />
               {b}
@@ -149,14 +149,14 @@ function ContactForm() {
           required
           rows={5}
           placeholder="Describe what you're building, the problem you're solving, your timeline, and any specific technical requirements or constraints..."
-          className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-orange-500/50 focus:bg-orange-500/[0.02] transition-all text-sm resize-none leading-relaxed"
+          className="w-full px-4 py-3 rounded-xl bg-white/[0.03] border border-white/8 text-white placeholder-silver-700 focus:outline-none focus:border-violet-500/50 focus:bg-violet-500/[0.02] transition-all text-sm resize-none leading-relaxed"
         />
       </div>
 
       <button
         type="submit"
         disabled={loading}
-        className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-orange-500 hover:bg-orange-600 disabled:opacity-70 disabled:cursor-not-allowed text-white font-display font-bold text-base tracking-wide transition-all duration-200 shadow-orange-sm hover:shadow-orange-md"
+        className="flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl bg-violet-500 hover:bg-violet-600 disabled:opacity-70 disabled:cursor-not-allowed text-white font-display font-bold text-base tracking-wide transition-all duration-200 shadow-orange-sm hover:shadow-orange-md"
       >
         {loading ? (
           <>
@@ -187,7 +187,7 @@ export function ContactPageClient() {
         <div
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none"
           style={{
-            background: "radial-gradient(ellipse, rgba(249,115,22,0.1) 0%, transparent 70%)",
+            background: "radial-gradient(ellipse, rgba(139,92,246,0.1) 0%, transparent 70%)",
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -234,30 +234,30 @@ export function ContactPageClient() {
                   </h3>
                   <div className="flex flex-col gap-4">
                     <a href="mailto:invictuskapital@gmail.com" className="flex items-start gap-3 group">
-                      <div className="w-9 h-9 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0">
-                        <Mail size={15} className="text-orange-400" />
+                      <div className="w-9 h-9 rounded-lg bg-violet-500/10 border border-violet-500/20 flex items-center justify-center shrink-0">
+                        <Mail size={15} className="text-violet-400" />
                       </div>
                       <div>
                         <p className="text-xs font-mono text-silver-600 uppercase tracking-wide mb-0.5">Email</p>
-                        <p className="text-silver-300 text-sm group-hover:text-orange-400 transition-colors">
+                        <p className="text-silver-300 text-sm group-hover:text-violet-400 transition-colors">
                           invictuskapital@gmail.com
                         </p>
                       </div>
                     </a>
                     <a href="tel:+2347035910594" className="flex items-start gap-3 group">
-                      <div className="w-9 h-9 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0">
-                        <Phone size={15} className="text-orange-400" />
+                      <div className="w-9 h-9 rounded-lg bg-violet-500/10 border border-violet-500/20 flex items-center justify-center shrink-0">
+                        <Phone size={15} className="text-violet-400" />
                       </div>
                       <div>
                         <p className="text-xs font-mono text-silver-600 uppercase tracking-wide mb-0.5">Phone</p>
-                        <p className="text-silver-300 text-sm group-hover:text-orange-400 transition-colors">
+                        <p className="text-silver-300 text-sm group-hover:text-violet-400 transition-colors">
                           +234 703 591 0594
                         </p>
                       </div>
                     </a>
                     <div className="flex items-start gap-3">
-                      <div className="w-9 h-9 rounded-lg bg-orange-500/10 border border-orange-500/20 flex items-center justify-center shrink-0">
-                        <MapPin size={15} className="text-orange-400" />
+                      <div className="w-9 h-9 rounded-lg bg-violet-500/10 border border-violet-500/20 flex items-center justify-center shrink-0">
+                        <MapPin size={15} className="text-violet-400" />
                       </div>
                       <div>
                         <p className="text-xs font-mono text-silver-600 uppercase tracking-wide mb-0.5">Location</p>
@@ -270,7 +270,7 @@ export function ContactPageClient() {
               </AnimatedSection>
 
               <AnimatedSection delay={0.15}>
-                <div className="p-6 rounded-2xl border border-orange-500/15 bg-orange-500/[0.03]">
+                <div className="p-6 rounded-2xl border border-violet-500/15 bg-violet-500/[0.03]">
                   <h3 className="font-display font-bold text-white text-base mb-4">What Happens Next</h3>
                   <div className="flex flex-col gap-4">
                     {[
@@ -280,7 +280,7 @@ export function ContactPageClient() {
                       { step: "04", text: "We send a scoped proposal within 48 hours of that call" },
                     ].map((s) => (
                       <div key={s.step} className="flex items-start gap-3">
-                        <span className="font-display font-black text-orange-500/40 text-sm stat-number shrink-0 pt-0.5">
+                        <span className="font-display font-black text-violet-500/40 text-sm stat-number shrink-0 pt-0.5">
                           {s.step}
                         </span>
                         <p className="text-silver-400 text-sm leading-relaxed">{s.text}</p>
@@ -293,7 +293,7 @@ export function ContactPageClient() {
               <AnimatedSection delay={0.2}>
                 <div className="p-6 rounded-2xl border border-white/7 bg-white/[0.015]">
                   <h3 className="font-display font-bold text-white text-base mb-3">Response Time</h3>
-                  <span className="font-display font-black text-orange-400 text-3xl stat-number">&lt;24h</span>
+                  <span className="font-display font-black text-violet-400 text-3xl stat-number">&lt;24h</span>
                   <p className="text-silver-500 text-xs font-mono mt-1">Guaranteed first response</p>
                   <p className="text-silver-700 text-xs font-mono mt-2">
                     Usually within a few hours during Lagos business hours (WAT, UTC+1)
@@ -307,3 +307,4 @@ export function ContactPageClient() {
     </div>
   );
 }
+

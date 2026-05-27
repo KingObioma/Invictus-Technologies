@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import { AnimatedSection } from "@/components/ui/AnimatedSection";
 import { Badge } from "@/components/ui/Badge";
@@ -131,7 +131,7 @@ export default function CaseStudiesPage() {
       <section className="relative pt-36 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-grid opacity-50 pointer-events-none" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full pointer-events-none"
-          style={{ background: "radial-gradient(ellipse, rgba(249,115,22,0.1) 0%, transparent 70%)" }}
+          style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.1) 0%, transparent 70%)" }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
@@ -158,7 +158,7 @@ export default function CaseStudiesPage() {
                   className="rounded-2xl border border-white/7 bg-white/[0.015] overflow-hidden scroll-mt-24"
                 >
                   {/* Header */}
-                  <div className="p-8 sm:p-10 border-b border-white/5 bg-gradient-to-r from-orange-950/20 to-transparent">
+                  <div className="p-8 sm:p-10 border-b border-white/5 bg-gradient-to-r from-violet-950/20 to-transparent">
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6">
                       <div>
                         <Badge variant="orange" className="mb-4">{cs.label}</Badge>
@@ -199,14 +199,14 @@ export default function CaseStudiesPage() {
                       {/* Solution */}
                       <div>
                         <h3 className="font-display font-bold text-white text-lg mb-3 flex items-center gap-2">
-                          <span className="w-1 h-5 rounded-full bg-orange-500" />
+                          <span className="w-1 h-5 rounded-full bg-violet-500" />
                           {cs.solution.title}
                         </h3>
                         <p className="text-silver-400 leading-relaxed text-sm mb-4">{cs.solution.body}</p>
                         <ul className="flex flex-col gap-2">
                           {cs.solution.points.map((p, j) => (
                             <li key={j} className="flex items-start gap-2 text-silver-500 text-sm">
-                              <span className="w-1 h-1 rounded-full bg-orange-500 shrink-0 mt-2" />
+                              <span className="w-1 h-1 rounded-full bg-violet-500 shrink-0 mt-2" />
                               {p}
                             </li>
                           ))}
@@ -215,7 +215,7 @@ export default function CaseStudiesPage() {
                     </div>
 
                     {/* Metrics */}
-                    <div className="p-6 rounded-xl border border-orange-500/15 bg-orange-500/[0.03] mb-8">
+                    <div className="p-6 rounded-xl border border-violet-500/15 bg-violet-500/[0.03] mb-8">
                       <h3 className="font-display font-bold text-white text-sm uppercase tracking-[0.15em] mb-5">
                         Outcomes
                       </h3>
@@ -245,7 +245,7 @@ export default function CaseStudiesPage() {
 
                     <Link
                       href="/contact"
-                      className="inline-flex items-center gap-2 text-orange-400 hover:text-orange-300 font-display font-semibold text-sm transition-colors"
+                      className="inline-flex items-center gap-2 text-violet-400 hover:text-violet-300 font-display font-semibold text-sm transition-colors"
                     >
                       Build something like this
                       <ArrowRight size={15} />
@@ -260,3 +260,4 @@ export default function CaseStudiesPage() {
     </div>
   );
 }
+
