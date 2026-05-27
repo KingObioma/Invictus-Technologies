@@ -12,7 +12,7 @@ const projectTypes = [
   "Enterprise Software",
   "Cloud & DevOps",
   "UI/UX Design",
-  "E-Commerce",
+  "E-Commerce",k
   "Automation / API",
   "Team Augmentation",
   "Technical Consulting",
